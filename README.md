@@ -1,3 +1,6 @@
 # ctfsv
 
-![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/capture2.png)
+
+Write-up các bài giải được trong kỳ ctf nội bộ Viettel
+
+Author: Nghiapt7

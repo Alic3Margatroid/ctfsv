@@ -10,7 +10,7 @@ Tới đây chúng ta có thể đọc /etc/passwd:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/esay/passwd.PNG)
 
-Thử dùng LFI để đọc 1 file khác, ta thấy có 1 file khá thú vị là apache log:
+Thử dùng LFI để đọc các file khác, ta thấy có 1 file khá thú vị là apache log:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/esay/apachelog.PNG)
 
@@ -18,7 +18,7 @@ Mò mẫm một hồi mới ngộ ra rằng ip ở đây là địa chỉ public
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/esay/log.PNG)
 
-Có vẻ như file log này giống như log apache thường, chỉ log lại method, uri và http version, sau đó server đọc file load và hiển thị trực tiếp, dẫn tới ý tưởng inject code php. Ta sẽ thử truyền thêm 1 parameter mới là code mà ta định thực thi. Tuy nhiên khi truyền qua url browser thì một số ký tự sẽ bị urlencode, dẫn tới không chạy được code:
+Có vẻ như file log này giống như log apache thường, chỉ log lại method, uri và http version, sau đó server đọc file log và hiển thị trực tiếp, dẫn tới ý tưởng inject code php. Ta sẽ thử truyền thêm 1 parameter mới là code mà ta định thực thi. Tuy nhiên khi truyền qua url browser thì một số ký tự sẽ bị urlencode, dẫn tới không chạy được code:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/esay/fail.PNG)
 

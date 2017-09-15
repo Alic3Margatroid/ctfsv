@@ -1,4 +1,4 @@
-Truy cập vào trang web http://dotard.scoreboard.ns01.info/ chúng ta sẽ thấy 1 giao diện login: 
+Truy cập vào trang http://dotard.scoreboard.ns01.info/ chúng ta sẽ thấy 1 giao diện login: 
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Dotard2/login.PNG)
 

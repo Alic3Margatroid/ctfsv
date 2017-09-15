@@ -1,2 +1,2 @@
 Truy cập vào trang http://mtp.scoreboard.ns01.info/ chúng ta thấy giao diện như sau:
-[alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Sky'ss/home.png)
+[alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Sky'ss/home.PNG)

@@ -4,7 +4,7 @@ Truy cập vào trang http://megaupload.scoreboard.ns01.info/ chúng ta sẽ th�
 
 Ý tưởng ở đây là chúng ta sẽ tìm cách upshell lên server. Thử test 1 lúc với chức năng upload của server thì thấy server sẽ chỉ nhận ảnh là jpg, đuôi file trong phần tên phải là jpg hoặc jpeg, mime-type là jpg hoặc jpeg. 
 
-Chúng ta sẽ thêm 1 đoạn shell vào cuối 1 bức ảnh jpg (<?php system($_GET['c']); ?>), sau đó upload lên server:
+Chúng ta sẽ thêm 1 đoạn shell vào cuối 1 bức ảnh jpg (system($_GET['c']);), sau đó upload lên server:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Megaupload/upload.PNG)
 

@@ -7,6 +7,7 @@ Chúng ta vào trang http://cannotbruteforce.scoreboard.ns01.info/ và có giao 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Beer/source.PNG)
 
 Chúng ta thử test đoạn code này:
+```php
 
 $user_list = array(
 	0 => array('username' => 'admin', 'password' => 'xxxxxxxxxxxxxxxxxxxx'),
@@ -29,6 +30,8 @@ foreach ($user_list as & $user) {
 }
 
 var_dump($user_list);
+
+```
 
 và nhận thấy ở var_dump thứ 2 kết quả khá thú vị:
 

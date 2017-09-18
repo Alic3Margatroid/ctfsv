@@ -33,3 +33,19 @@ var_dump($user_list);
 và nhận thấy ở var_dump thứ 2 kết quả khá thú vị:
 
 ![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Beer/test.PNG)
+
+Ở đây ta thấy user_list[6] lại là được trỏ bởi 1 con trỏ. Điều này xảy ra do khi iterate hết user_list, trang web đã quên không free user, nên con trỏ ở đây chính là của user. Vì vậy khi xử lý $_GET['user'], thực tế là user_list[6] bị điều khiển bởi người dùng. Chúng ta sẽ có ý tưởng sửa giá trị của user_list[6] thành giá trị ta mong muốn, sau đó truyền user_list[6](hay ở đây là user[6]) là giá trị user.
+
+Ví dụ với đoạn code sau:
+
+![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Beer/modifycode.PNG)
+
+Chúng ta có thể sửa được giá trị name của user_list[6] về admin 1 cách dễ dàng:
+
+![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Beer/modifyresult.PNG)
+
+Và giờ chúng ta quay lại với bài ở đây, truyền thêm password là chúng ta đạt được mục đích:
+
+![alt text](https://raw.githubusercontent.com/Alic3Margatroid/ctfsv/master/Beer/flag.PNG)
+
+flag: Flag{W3b_wr0oong_With_&_}

